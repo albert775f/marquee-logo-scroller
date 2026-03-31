@@ -23,7 +23,12 @@ export default function RootLayout({
       lang="en"
       className={`${plusJakartaSans.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <footer className="fixed bottom-4 left-1/2 -translate-x-1/2 text-xs text-white/30 pointer-events-none select-none tracking-widest uppercase">
+          Albert Artykov
+        </footer>
+      </body>
     </html>
   );
 }
