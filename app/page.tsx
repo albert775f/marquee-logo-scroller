@@ -45,8 +45,9 @@ const partners = [
 
 export default function Home() {
   return (
-    <div className="bg-background min-h-screen w-full flex items-center justify-center p-4">
+    <div className="bg-background min-h-screen w-full flex items-center justify-center p-8">
       <MarqueeLogoScroller
+        className="max-w-3xl w-full"
         title="Trusted by Businesses Worldwide"
         description="Founders, developers, and business leaders across the globe chose us for their digital asset operations."
         logos={partners}
